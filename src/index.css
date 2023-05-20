@@ -10,39 +10,42 @@ body {
   width: 100%;
 
 }
+/* html {
+  height: 100vh;
+  width: 100vw;
+} */
 ul {
   list-style: none;
   display: flex;
 }
-header {
+nav {
 display: flex;
-justify-content: space-between;
+justify-content: flex-end;
 align-items: center;
 padding: 20px 200px;
 background-color: black;
 color: white;
 }
-header div {
+nav div {
   font-size: 2rem;
 }
-.name {
-  color: rgb(140, 67, 189);
-  font-weight: bold;
-}
-header ul {
+
+nav ul {
   gap: 3rem;
   font-size: 1.5rem;
   align-self: flex-end;
 }
 .hero-container {
   padding: 20px;
+  /* border: 2px solid green; */
   background-color: black;
   /* position: relative; */
   display: flex;
   /* flex-direction: column; */
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   /* border-bottom: 18px solid rgb(55, 1, 91); */
+  height: 90vh;
 }
 .hero-grid-wrapper {
   display: grid;
@@ -72,15 +75,43 @@ header ul {
 .hero-text-content {
   /* border: 2px solid white; */
   height: 100%;
-  width: 55%;
+  width: 100%;
   color: white;
-  font-size: 3rem;
-  /* align-self: flex-start; */
-  text-align: left;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 300px;
+  /* align-items: center; */
+  /* align-self: center; */
+  /* text-align: left; */
 }
-.hero-text-content p {
+.links {
+  font-size: 2rem;
+  padding: 0px;
+  justify-content: space-between;
+  width: 520px;
+}
+a {
+  color: inherit;
+}
+.links li {
+  border-bottom: 2px solid rgb(140, 67, 189);
+  padding: 10px;
+  transition: background-color .5s;
+}
+.links li:hover {
+  background-color: rgb(140, 67, 189);
+  cursor: pointer;
+}
+.name {
+  color: rgb(140, 67, 189);
+  font-weight: bold;
+}
+.title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 4rem;
+  margin: 0;
 }
 .test {
   /* align-self: flex-end; */

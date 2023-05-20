@@ -9,26 +9,35 @@ export default function Hero() {
     }
   }
   // Creates 100 grid items
-  function createGridElements() {
-    let elements = [];
-    for (let i = 0; i < 24; i++) {
-      elements.push(
-        <div className="hero-grid-item">
-          {/* <div className={addClassName(i)}></div> */}
-        </div>
-      );
-    }
-    return elements;
-  }
+  //   function createGridElements() {
+  //     let elements = [];
+  //     for (let i = 0; i < 24; i++) {
+  //       elements.push(
+  //         <div className="hero-grid-item">
+  //           {/* <div className={addClassName(i)}></div> */}
+  //         </div>
+  //       );
+  //     }
+  //     return elements;
+  //   }
 
   return (
-    <section className="hero-container">
-      <div className="hero-grid-wrapper">{createGridElements()}</div>
+    <section
+      //   aria-label="introduction interaction and text"
+      className="hero-container"
+    >
+      {/* <div className="hero-grid-wrapper">{createGridElements()}</div> */}
       <div className="hero-text-content">
         <span>
-          Hey, I'm <span className="name">Paige</span>
+          Hi, I'm <span className="name">Paige.</span>
         </span>
-        <p>Full-stack web developer based in Atlanta, GA.</p>
+        <p className="title">I'm a full stack developer.</p>
+        <ul className="links">
+          <li>Stack</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </div>
     </section>
   );

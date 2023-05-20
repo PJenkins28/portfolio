@@ -4,10 +4,12 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 export default function App() {
   return (
-    <div>
+    <section className="app">
       <Nav />
-      <Hero />
-      <About />
-    </div>
+      <main>
+        <Hero />
+        <About />
+      </main>
+    </section>
   );
 }
