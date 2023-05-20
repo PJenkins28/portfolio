@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
+body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: "inter", sans-serif;
+  height: 100%;
+  width: 100%;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 200px;
+background-color: black;
+color: white;
+}
+header div {
+  font-size: 2rem;
+}
+.name {
+  color: rgb(140, 67, 189);
+  font-weight: bold;
+}
+header ul {
+  gap: 3rem;
+  font-size: 1.5rem;
+  align-self: flex-end;
+}
+.hero-container {
+  padding: 20px;
+  background-color: black;
+  /* position: relative; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: 18px solid rgb(55, 1, 91); */
+}
+.hero-grid-wrapper {
+  display: grid;
+  align-self: normal;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 35%;
+}
+.hero-grid-item {
+  height: 70px;
+  width: 150px;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.circle {
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-color: rgb(55, 1, 91);
+  height: 45px;
+  width: 45px;
+}
+.hero-text-content {
+  /* border: 2px solid white; */
+  height: 100%;
+  width: 55%;
+  color: white;
+  font-size: 3rem;
+  /* align-self: flex-start; */
+  text-align: left;
+}
+.hero-text-content p {
+  color: white;
+  font-size: 1.5rem;
+}
+.test {
+  /* align-self: flex-end; */
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.test2 {
+  position:absolute;
+  bottom: 0px;
+  left: 0;
+}
+.about-wrapper {
+  background-color: rgb(32, 1, 52);
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* gap: 10rem; */
+  padding: 130px 250px;
+}
+h2 {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 400px;
+}
+.about-wrapper h2 {
+  font-size: 3rem;
+}
+.tech-stack {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.icon {
+  padding-right: 10px;
 }
