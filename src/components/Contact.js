@@ -9,11 +9,24 @@ export default function Contact(props) {
         Let's work <span>together</span>
       </h2>
       <form>
-        <section className="inputs">
-          <input type="text" placeholder="Name"></input>
-          <input type="email" placeholder="Email"></input>
-        </section>
-        <textarea placeholder="Make it a good one (;"></textarea>
+        <ul>
+          <li>
+            <section className="inputs">
+              <section>
+                <label for="name">Name</label>
+                <input type="text" id="name"></input>
+              </section>
+              <section>
+                <label for="name">Email</label>
+                <input type="email"></input>
+              </section>
+            </section>
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </li>
+        </ul>
       </form>
     </section>
   );
