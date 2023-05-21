@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 
-export default function Hero() {
+export default function Hero(props) {
   function addClassName(index) {
     if (Math.floor(Math.random() * 12) % 2 === 0) {
       return "circle test";
@@ -8,6 +8,7 @@ export default function Hero() {
       return "circle test2";
     }
   }
+
   // Creates 100 grid items
   //   function createGridElements() {
   //     let elements = [];
@@ -33,7 +34,12 @@ export default function Hero() {
         </span>
         <p className="title">I'm a full stack developer.</p>
         <ul className="links">
-          <li>Stack</li>
+          <li
+            ref={props.skillsRef}
+            onClick={() => props.handleClick(props.skillsRef)}
+          >
+            Stack
+          </li>
           <li>Projects</li>
           <li>About</li>
           <li>Contact</li>

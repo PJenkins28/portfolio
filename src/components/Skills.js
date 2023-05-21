@@ -7,9 +7,9 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 
-export default function About() {
+export default function Skills(props) {
   return (
-    <section className="about-wrapper">
+    <section className="about-wrapper" ref={props.skillsRef}>
       <h2>My Tech Stack</h2>
       <section>
         <ul className="tech-stack">
