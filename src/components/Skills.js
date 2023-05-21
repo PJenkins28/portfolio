@@ -6,38 +6,48 @@ import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Skills(props) {
   return (
-    <section className="about-wrapper" ref={props.skillsRef}>
-      <h2>My Tech Stack</h2>
-      <section>
-        <ul className="tech-stack">
-          <li>
-            <FontAwesomeIcon className="icon" icon={faHtml5} />
-            HTML
-          </li>
-          <li>
-            <FontAwesomeIcon className="icon" icon={faCss3} />
-            CSS
-          </li>
-          <li>
-            <FontAwesomeIcon className="icon" icon={faJsSquare} />
-            JavaScript
-          </li>
-          <li>
-            <FontAwesomeIcon className="icon" icon={faGitAlt} />
-            Git
-          </li>
-          <li>
-            <FontAwesomeIcon className="icon" icon={faReact} />
-            React
-          </li>
-          <li>
-            <FontAwesomeIcon className="icon" icon={faNodeJs} />
-            NodeJS
-          </li>
-        </ul>
+    <section>
+      <section className="about-wrapper" ref={props.skillsRef}>
+        <h2>My Tech Stack</h2>
+        <section>
+          <ul className="tech-stack">
+            <li>
+              <FontAwesomeIcon className="icon" icon={faHtml5} />
+              HTML
+            </li>
+            <li>
+              <FontAwesomeIcon className="icon" icon={faCss3} />
+              CSS
+            </li>
+            <li>
+              <FontAwesomeIcon className="icon" icon={faJsSquare} />
+              JavaScript
+            </li>
+            <li>
+              <FontAwesomeIcon className="icon" icon={faGitAlt} />
+              Git
+            </li>
+            <li>
+              <FontAwesomeIcon className="icon" icon={faReact} />
+              React
+            </li>
+            <li>
+              <FontAwesomeIcon className="icon" icon={faNodeJs} />
+              NodeJS
+            </li>
+          </ul>
+        </section>
+        <div
+          className="down"
+          ref={props.projectsRef}
+          onClick={() => props.handleClick(props.projectsRef)}
+        >
+          <FontAwesomeIcon icon={faArrowDown} size="4x" />
+        </div>
       </section>
     </section>
   );

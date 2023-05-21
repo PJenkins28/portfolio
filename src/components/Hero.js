@@ -40,9 +40,24 @@ export default function Hero(props) {
           >
             Stack
           </li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li
+            ref={props.projectsRef}
+            onClick={() => props.handleClick(props.projectsRef)}
+          >
+            Projects
+          </li>
+          <li
+            ref={props.aboutRef}
+            onClick={() => props.handleClick(props.aboutRef)}
+          >
+            About
+          </li>
+          <li
+            ref={props.contactRef}
+            onClick={() => props.handleClick(props.contactRef)}
+          >
+            Contact
+          </li>
         </ul>
       </div>
     </section>

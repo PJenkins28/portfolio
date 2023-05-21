@@ -38,7 +38,7 @@ nav ul {
   font-size: 1.5rem;
   align-self: flex-end;
 }
-.about-wrapper, .projects {
+.about-wrapper, .projects, .about-component, .contact-wrapper {
 height: 110vh;
 }
 .hero-container {
@@ -134,21 +134,13 @@ a {
 .about-wrapper {
   background-color: black;
   color:rgb(124, 38, 182);
-  /* background-color: rgb(32, 1, 52); */
-  /* background-color: rgb(232, 200, 240); */
-  /* color: white; */
-  /* color: rgb(246, 240, 248); */
   display: flex;
   justify-content: center;
   align-items: center;;
   gap: 2rem;
-  /* gap: 10rem; */
   padding: 130px 250px;
   border-radius: 20%/100px 100px 0 0;
   border-top: 2px solid rgb(124, 38, 182);
-  /* background-color: #02aab0;
-  background-image: linear-gradient(135deg,#02aab0,#00cdac); */
-  /* border-bottom: 2px solid rgb(124, 38, 182); */
 }
 h2 {
   padding: 0;
@@ -169,18 +161,32 @@ h2 {
 .icon {
   padding-right: 10px;
 }
-.project-container {
-  height: 500px;
+.down {
+  align-self: flex-end
 }
 .projects {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   background-color: black;
   color: white;
-  /* margin-top: -15rem;
-  padding: 18rem 0 10rem;
-  clip-path: polygon(0 15vh,100% 0,100% 100%,0 100%); */
+  padding-top: 300px;
   background-color: rgb(219, 219, 219);
-  /* border-radius: 20%/200px 0 20px 200px; */
-  /* border-top: 2px solid rgb(212, 194, 194);   */
+}
+.down-test {
+  display: flex;
+  /* flex-direction: column; */
+}
+.projects img {
+height: 200px;}
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+.about-component div {
+  font-size: 200px;
+  color: white;
+}
+.contact-wrapper {
+  border: 2px solid white;
 }
