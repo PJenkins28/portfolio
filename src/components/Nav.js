@@ -6,8 +6,15 @@ import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   return (
-    <nav aria-label="main navigation">
-      {/* <div>Paige Jenkins</div> */}
+    <header aria-label="main navigation">
+      <nav>
+        <ul className="nav">
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
       <ul>
         <li>
           <a
@@ -31,6 +38,6 @@ export default function Nav() {
           <FontAwesomeIcon icon={faFile} />
         </li>
       </ul>
-    </nav>
+    </header>
   );
 }
