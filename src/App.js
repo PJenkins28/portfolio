@@ -35,7 +35,13 @@ export default function App() {
   });
   return (
     <section className="app">
-      <Nav />
+      <Nav
+        handleClick={scrollToSection}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
+        aboutRef={aboutRef}
+        contactRef={contactRef}
+      />
       <main>
         <Hero
           handleClick={scrollToSection}
@@ -52,7 +58,7 @@ export default function App() {
         <section ref={projectsRef} className="projects">
           <section className="project-content">
             <h2>Projects</h2>
-            {projects}
+            <section className="project-items">{projects}</section>
           </section>
           <FontAwesomeIcon
             icon={faArrowDown}

@@ -4,15 +4,15 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
-export default function Nav() {
+export default function Nav(props) {
   return (
     <header aria-label="main navigation">
       <nav>
         <ul className="nav">
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li onClick={() => props.handleClick(props.skillsRef)}>Skills</li>
+          <li onClick={() => props.handleClick(props.projectsRef)}>Projects</li>
+          <li onClick={() => props.handleClick(props.aboutRef)}>About</li>
+          <li onClick={() => props.handleClick(props.contactRef)}>Contact</li>
         </ul>
       </nav>
       <ul>

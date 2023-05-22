@@ -6,17 +6,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: "inter", sans-serif;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
 }
 main {
   background-color: black;
 }
-/* html {
+html {
   height: 100vh;
   width: 100vw;
-} */
+}
 ul {
   list-style: none;
   display: flex;
@@ -31,20 +31,23 @@ color: white;
 position: fixed;
 width: 100%;
 }
-.mav {
+.nav {
 align-self: flex-start;
 }
 header div {
   font-size: 2rem;
 }
-
+.nav li:hover {
+  cursor: pointer;
+  color:rgb(138, 66, 186)
+}
 header ul {
   gap: 3rem;
   font-size: 1.5rem;
   align-self: flex-end;
 }
 .about-wrapper, .projects, .about-component, .contact-wrapper {
-height: 110vh;
+height: 120vh;
 }
 .hero-container {
   padding: 20px;
@@ -57,6 +60,7 @@ height: 110vh;
   justify-content: center;
   /* border-bottom: 18px solid rgb(55, 1, 91); */
   height: 80vh;
+  width: 100%;
 }
 .hero-grid-wrapper {
   display: grid;
@@ -102,6 +106,9 @@ height: 110vh;
   padding: 0px;
   justify-content: space-between;
   width: 520px;
+}
+main {
+  width: 100vw;
 }
 a {
   color: inherit;
@@ -171,29 +178,55 @@ h2 {
 }
 .projects {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   background-color: black;
   color: white;
   padding-top: 300px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(0, 0, 0);
+}
+.project-content {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 .down-test {
   display: flex;
   /* flex-direction: column; */
 }
 .projects img {
-height: 200px;}
+height: 200px;
+}
+.project-content h2 {
+  width: 50%;
+  align-self: center;
+  padding-left: 40px;
+  font-size: 3rem;
+}
 .project-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+.project-items {
+  width: 100%;
+  padding-left: 300px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .about-component div {
   font-size: 200px;
   color: white;
 }
 .contact-wrapper {
-  /* border: 2px solid white; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -209,26 +242,29 @@ height: 200px;}
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
   width: 508px;
   height: 500px;
   border: 2px solid rgb(124, 38, 182);
-  box-shadow: -1px 10px 16px 0px rgb(124, 38, 182);
   font-size: 2rem;
-  border-radius: .5rem
+  border-radius: .3rem;
+  padding-right: 40px;
 }
 h2 span {
   color:rgb(124, 38, 182);
 }
 textarea, input {
   font-family: 'Inter', sans-serif;
-  border-radius: .5rem;
+  /* border-radius: .5rem; */
   outline: none;
   border: 2px solid black;
   padding: 10px;
-  color: black
+  color: black;
+  background-color: black;
+  border-bottom: 1px solid rgb(140, 67, 189)
+  
 }
 textarea:focus, input:focus, textarea:hover, input:hover {
   border: 2px solid rgb(144, 73, 190);
@@ -236,29 +272,48 @@ textarea:focus, input:focus, textarea:hover, input:hover {
 textarea {
   height: 275px;
   max-height: 275px;
-  width: 425px;
-  max-width: 425px;
+  width: 440px;
+  max-width: 440px;
   font-size: 1rem;
+  align-self: center;
+  margin-top: 20px;
 }
 label {
-  color: white;
+  color: rgb(174, 102, 222);
   padding: 0;
   text-align: left;
   font-size: 1rem;
   padding-left: 10px;
 }
 input {
-  width: 190px;
+  width: 435px;
   height: 40px;
   font-size: 1rem;
-  
+
 }
 .inputs {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: .5rem;
   position: relative;
 }
 form ul {
   display: flex;
   flex-direction: column
+}
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: .2rem;
+  font-size: 1.2rem;
+  align-self: center;
+  background-color:black;
+  color: white;
+  border: 2px solid rgb(144, 73, 190);
+}
+button:hover {
+  cursor: pointer;
+  background-color:rgb(144, 73, 190);
+  transition: background-color .5s;
+  
 }
